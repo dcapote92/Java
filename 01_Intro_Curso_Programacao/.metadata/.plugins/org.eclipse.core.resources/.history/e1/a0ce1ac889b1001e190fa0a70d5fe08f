@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class Ex_01 {
+
+	public static void main(String[] args) {
+		final private String senha = "2002";
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Digite a senha: ");
+		private String s = sc.next();
+		while (s != senha) {
+			System.out.printf("Senha inválida%nDigite novamente:%n");
+			s = sc.next();
+		}
+		sc.close();
+		System.out.println("Acesso Permitido");
+	}
+
+}

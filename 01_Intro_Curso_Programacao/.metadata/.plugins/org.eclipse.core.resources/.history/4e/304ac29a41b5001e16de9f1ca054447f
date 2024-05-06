@@ -1,0 +1,30 @@
+package application;
+
+import java.util.Scanner;
+
+import entities.Person;
+
+public class Program {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.print("Quantas pessoas serão digitadas? ");
+		Person[] persons = new Person[sc.nextInt()];
+		for (int i = 0; i < persons.length; i++) {
+			System.out.printf("Dados da %d° pessoa: ", i + 1);
+			System.out.print("Nome: ");
+			persons[i].setName(sc.nextLine());
+			System.out.print("Idade: ");
+			persons[i].setAge(sc.nextByte());
+			System.out.print("Altura: ");
+			persons[i].setHeight(sc.nextFloat());
+		}
+		sc.close();
+		float soma = 0f;
+		for (int i = 0; i < persons.length; i++) {
+			soma += persons[i].getHeight();
+		}
+		float media = soma/persons.length;
+	}
+
+}

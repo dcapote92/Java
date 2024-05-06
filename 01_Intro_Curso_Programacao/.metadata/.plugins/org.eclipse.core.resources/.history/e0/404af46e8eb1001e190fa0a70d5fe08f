@@ -1,0 +1,13 @@
+import java.util.Scanner;
+
+public class Ex_03 {
+
+	public static void main(String[] args) {
+		System.out.println("1.Álcool 2.Gasolina 3.Diesel 4.Fim");
+		int alc = 0, gas = 0, die = 0, aux;
+		Scanner sc = new Scanner(System.in);
+		
+		while()
+	}
+
+}

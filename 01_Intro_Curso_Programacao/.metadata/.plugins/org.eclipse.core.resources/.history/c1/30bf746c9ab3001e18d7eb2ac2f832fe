@@ -1,0 +1,9 @@
+package utils;
+
+public class CurrencyConverter {
+	
+	public static float dollarToReal(float dollarPrice, float quantity) {
+		return dollarPrice * quantity;
+	}
+
+}

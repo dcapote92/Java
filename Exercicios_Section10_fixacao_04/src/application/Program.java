@@ -1,0 +1,30 @@
+package application;
+
+import java.util.Scanner;
+
+public class Program {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.print("Quantos números você vai digitar? ");
+		Integer[] numbers = new Integer[sc.nextInt()];
+
+		for (int i = 0; i < numbers.length; i++) {
+			System.out.print("Digite um número: ");
+			numbers[i] = sc.nextInt();
+		}
+		int pairs = 0;
+		System.out.println("\nNÚMEROS PARES:");
+		for (int i = 0; i < numbers.length; i++) {
+			if (numbers[i] % 2 == 0) {
+				System.out.print(numbers[i] + " ");
+				pairs++;
+			}
+		}
+		
+		System.out.printf("%nQUANTIDADE DE PARES: %d", pairs);
+
+		sc.close();
+	}
+
+}

@@ -1,0 +1,15 @@
+import java.util.Scanner;
+public class Ex_02 {
+
+	public static void main(String[] args) {
+		int x, y;
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Digite as cordenadas X e Y:");
+		
+		while(x!=0 || y!=0) {
+			
+		}
+
+	}
+
+}

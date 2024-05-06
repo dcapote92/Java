@@ -1,0 +1,6 @@
+package signup;
+
+public class Account {
+	private long number;
+
+}

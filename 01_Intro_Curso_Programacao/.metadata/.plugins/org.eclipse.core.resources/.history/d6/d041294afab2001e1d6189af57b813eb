@@ -1,0 +1,24 @@
+package application;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+import entities.Student;
+
+public class Program {
+
+	public static void main(String[] args) {
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+		Student st = new Student();
+		System.out.print("Name: ");
+		st.name = sc.nextLine();
+		System.out.print("1° Trimester grade: ");
+		st.trim1 = sc.nextFloat();
+		System.out.print("2° Trimester grade: ");
+		st.trim2 = sc.nextFloat();
+		System.out.print("3° Trimester grade: ");
+		st.trim3 = sc.nextFloat();
+	}
+
+}

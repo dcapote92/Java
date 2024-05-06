@@ -1,0 +1,44 @@
+package signup;
+
+public class Account {
+	private long number;
+	private String ownerName;
+	private double amount;
+
+	public Account(long number, String ownerName, double amount) {
+		super();
+		this.number = number;
+		this.ownerName = ownerName;
+		this.amount = amount;
+	}
+
+	public Account(long number, String ownerName) {
+		super();
+		this.number = number;
+		this.ownerName = ownerName;
+	}
+
+	public long getNumber() {
+		return number;
+	}
+
+
+	public String getOwnerName() {
+		return ownerName;
+	}
+
+	public void setOwnerName(String ownerName) {
+		this.ownerName = ownerName;
+	}
+
+	public double getAmount() {
+		return amount;
+	}
+
+	public void setAmount(double amount) {
+		this.amount = amount;
+	}
+	
+	
+
+}

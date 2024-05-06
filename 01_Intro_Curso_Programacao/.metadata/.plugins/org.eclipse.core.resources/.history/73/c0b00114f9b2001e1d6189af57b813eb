@@ -1,0 +1,24 @@
+package entities;
+
+public class Student {
+	public String name;
+	public float trim1, trim2, trim3;
+	
+	public float finalGrade() {
+		return trim1 + trim2 + trim3;
+	}
+	
+	public float aproved() {
+		String result;
+		
+		if(finalGrade() >= 60) {
+			System.out.println("PASS");
+		}
+		else {
+			System.out.println("FAILED");
+			result = (float)60 - finalGrade();
+		}
+		return result;
+	}
+	
+}
